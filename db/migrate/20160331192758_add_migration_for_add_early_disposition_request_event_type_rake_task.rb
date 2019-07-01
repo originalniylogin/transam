@@ -1,4 +1,4 @@
-class AddMigrationForAddEarlyDispositionRequestEventTypeRakeTask < ActiveRecord::Migration
+class AddMigrationForAddEarlyDispositionRequestEventTypeRakeTask < ActiveRecord::Migration[5.2]
   def change
     unless Rails.env.test?
       reversible do |change|

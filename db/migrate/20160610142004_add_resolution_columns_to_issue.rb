@@ -1,4 +1,4 @@
-class AddResolutionColumnsToIssue < ActiveRecord::Migration
+class AddResolutionColumnsToIssue < ActiveRecord::Migration[5.2]
   def change
 
     unless ActiveRecord::Base.connection.table_exists? 'issue_status_types'

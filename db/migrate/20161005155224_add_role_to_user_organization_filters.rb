@@ -1,4 +1,4 @@
-class AddRoleToUserOrganizationFilters < ActiveRecord::Migration
+class AddRoleToUserOrganizationFilters < ActiveRecord::Migration[5.2]
   def change
     if ActiveRecord::Base.connection.table_exists?(:user_organization_filters)
       add_reference :user_organization_filters, :created_by_user, index: true

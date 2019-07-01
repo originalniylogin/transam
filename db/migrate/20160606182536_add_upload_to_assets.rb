@@ -1,4 +1,4 @@
-class AddUploadToAssets < ActiveRecord::Migration
+class AddUploadToAssets < ActiveRecord::Migration[5.2]
   def change
     add_reference :assets, :upload
 

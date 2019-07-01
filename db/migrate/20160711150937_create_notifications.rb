@@ -1,4 +1,4 @@
-class CreateNotifications < ActiveRecord::Migration
+class CreateNotifications < ActiveRecord::Migration[5.2]
   def change
     create_table :notifications do |t|
       t.string :object_key,     limit: 12, null: false

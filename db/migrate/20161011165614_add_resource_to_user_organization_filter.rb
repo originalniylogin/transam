@@ -1,4 +1,4 @@
-class AddResourceToUserOrganizationFilter < ActiveRecord::Migration
+class AddResourceToUserOrganizationFilter < ActiveRecord::Migration[5.2]
   def up
     if ActiveRecord::Base.connection.table_exists?(:user_organization_filters)
       change_table :user_organization_filters do |t|

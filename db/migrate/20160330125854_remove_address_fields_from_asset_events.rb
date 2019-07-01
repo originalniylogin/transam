@@ -1,4 +1,4 @@
-class RemoveAddressFieldsFromAssetEvents < ActiveRecord::Migration
+class RemoveAddressFieldsFromAssetEvents < ActiveRecord::Migration[5.2]
   def change
     remove_column :asset_events, :address1, :string, :limit => 128
     remove_column :asset_events, :address2, :string, :limit => 128

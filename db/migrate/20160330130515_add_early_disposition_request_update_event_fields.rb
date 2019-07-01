@@ -1,4 +1,4 @@
-class AddEarlyDispositionRequestUpdateEventFields < ActiveRecord::Migration
+class AddEarlyDispositionRequestUpdateEventFields < ActiveRecord::Migration[5.2]
   def change
     add_column :asset_events, :state, :string, limit: 32 
     add_column :asset_events, :document, :string, limit: 128
